@@ -80,10 +80,11 @@ func (a *Manager) FindOrCreate(ctx *kaos.Context, parm codekit.M, data codekit.M
 		}
 		return s, e
 	} else {
-		if data != nil && len(data) > 0 {
+		if len(data) > 0 || s.Duration != duration {
 			for k, v := range data {
 				s.Data.Set(k, v)
 			}
+			s.Duration = duration
 			go a.opts.Storage.Write(s)
 		}
 	}

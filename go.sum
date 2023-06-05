@@ -59,8 +59,6 @@ git.kanosolution.net/kano/appkit v0.0.1/go.mod h1:GucUqulMe0BDSKSMSXzfS0gzxw8JO8
 git.kanosolution.net/kano/appkit v0.0.3 h1:V+Avl1X2uzCwsoXttgGfPGGxpFo+9120w7TBaA7xUlc=
 git.kanosolution.net/kano/appkit v0.0.3/go.mod h1:R9lSLmv987MZYIcmW5QRFySaEGASi/k4iODXsbeTs+g=
 git.kanosolution.net/kano/dbflex v1.0.11/go.mod h1:JwhKlws6r/uBbPE126aJpHbq3x4iugF0ViJlE/fFg/k=
-git.kanosolution.net/kano/dbflex v1.0.12/go.mod h1:JwhKlws6r/uBbPE126aJpHbq3x4iugF0ViJlE/fFg/k=
-git.kanosolution.net/kano/dbflex v1.1.0/go.mod h1:3YZtv6TD1Io6khYnzdoOmyzGqt9lf03zp0LQBLSMQaQ=
 git.kanosolution.net/kano/dbflex v1.2.1 h1:SllhA0qMcF1BHOYMdXIsIj1cbqohj2XgFp+7c4ZrZls=
 git.kanosolution.net/kano/dbflex v1.2.1/go.mod h1:kMbDllDjd+lwhCO4XRrCJP1kP0X46iPPrNG7hblrbcA=
 git.kanosolution.net/kano/kaos v0.2.0/go.mod h1:NwMLC/+BhCXZ5Papa2nlsgay/PnGNd0hmz/v/q9oK6Y=
@@ -82,12 +80,11 @@ github.com/ariefdarmawan/datahub v0.1.13/go.mod h1:00QQV4kYSnE3rCdWZtHPmeoCdX533
 github.com/ariefdarmawan/datahub v0.2.2 h1:OEek3P3KexTG9sMQx9LzgO0eNeykbtluMRnOTRIfM74=
 github.com/ariefdarmawan/datahub v0.2.2/go.mod h1:/evipuY++BEb5b/HceMprpenYJPn78NP8Y0z4Gsercc=
 github.com/ariefdarmawan/flexmgo v0.1.15/go.mod h1:ZNVfnly+iMMBJ9sP142Kkt31CeQk+M8LLWYEfF59Qr8=
-github.com/ariefdarmawan/flexmgo v0.2.2/go.mod h1:uW09cBzpeI/4Az0j2iLO4Va2wxfJ5T+m9012fUzM7JM=
 github.com/ariefdarmawan/flexmgo v0.3.0 h1:UC38yWnCdfXrz8nCeHS9KjahLupWWSKz/PCB6rlTTV8=
 github.com/ariefdarmawan/flexmgo v0.3.0/go.mod h1:jhsXeMRcqEP7j+SG41WehSRoRVuWPhB2qf7IBSwpDQU=
 github.com/ariefdarmawan/flexpg v0.6.3/go.mod h1:aesluyV4eNRR5+bXiPr8iJSqeiBCPrvT2jfQg0CfKpQ=
-github.com/ariefdarmawan/flexpg v0.7.0 h1:Nd8CDPYajtUg0aZZqPSq5g7aD/4rk90u8Rj0mSbDiYc=
-github.com/ariefdarmawan/flexpg v0.7.0/go.mod h1:SHyKHnF02OwNjB+fpbSsribYZK52zUTL6qVKV8yGZIM=
+github.com/ariefdarmawan/flexpg v0.7.1 h1:jEcjcIVHn502DnVUak8NSgSzARbXx0QkzEXYzFJtBbw=
+github.com/ariefdarmawan/flexpg v0.7.1/go.mod h1:g7WviPpfAoDmL0y0uE4eIsCJlma+GQvVhcgNgy+QcoA=
 github.com/ariefdarmawan/reflector v0.0.3 h1:qbfwP5iKMvdYBWRG2jZyoXRLPsGedJ1sNcC8bw+MhpY=
 github.com/ariefdarmawan/reflector v0.0.3/go.mod h1:xxeY7n6iT0q5pK4j3s8l2xo1CvmQgS2oYtj0lsV4eo4=
 github.com/ariefdarmawan/serde v0.1.0 h1:gVml1PZbomom4+gLcvM8k86PW05VWTy3EM7NaMBzPR8=
@@ -541,8 +538,6 @@ go.etcd.io/etcd/client/pkg/v3 v3.5.4/go.mod h1:IJHfcCEKxYu1Os13ZdwCwIUTUVGYTSAM3
 go.etcd.io/etcd/client/v2 v2.305.4/go.mod h1:Ud+VUwIi9/uQHOMA+4ekToJ12lTxlv0zB/+DHwTGEbU=
 go.etcd.io/etcd/client/v3 v3.5.4/go.mod h1:ZaRkVgBZC+L+dLCjTcF1hRXpgZXQPOvnA/Ak/gq3kiY=
 go.mongodb.org/mongo-driver v1.5.4/go.mod h1:gRXCHX4Jo7J0IJ1oDQyUxF7jfy19UfxniMS4xxMmUqw=
-go.mongodb.org/mongo-driver v1.6.0/go.mod h1:Q4oFMbo1+MSNqICAdYMlC/zSTrwCogR4R8NzkI+yfU8=
-go.mongodb.org/mongo-driver v1.7.1/go.mod h1:Q4oFMbo1+MSNqICAdYMlC/zSTrwCogR4R8NzkI+yfU8=
 go.mongodb.org/mongo-driver v1.9.1 h1:m078y9v7sBItkt1aaoe2YlvWEXcD263e1a4E1fBrJ1c=
 go.mongodb.org/mongo-driver v1.9.1/go.mod h1:0sQWfOeY63QTntERDJJ/0SuKK0T1uVSgKCuAROlKEPY=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
