@@ -112,7 +112,7 @@ func (a *Manager) Close() {
 
 func (a *Manager) Keys() []string {
 	res := []string{}
-	if a.pool != nil {
+	if a.pool == nil {
 		return res
 	}
 	if a.pool.sessions == nil {
