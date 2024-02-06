@@ -100,7 +100,7 @@ func (s *store) Write(sess *siam.Session) error {
 
 func (s *store) Remove(id string) {
 	s.lock.Lock()
-	s.lock.Unlock()
+	defer s.lock.Unlock()
 
 	locPath := filepath.Join(s.folderPath, id+".json")
 	os.Remove(locPath)
