@@ -109,3 +109,20 @@ func (a *Manager) Close() {
 	a.Store()
 	// do nothing for now
 }
+
+func (a *Manager) Keys() []string {
+	res := []string{}
+	if a.pool != nil {
+		return res
+	}
+	if a.pool.sessions == nil {
+		return res
+	}
+	res = make([]string, len(a.pool.sessions))
+	idx := 0
+	for k := range a.pool.sessions {
+		res[idx] = k
+		idx++
+	}
+	return res
+}
