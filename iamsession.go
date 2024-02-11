@@ -25,9 +25,6 @@ type SessionPool struct {
 	sessions map[string]*Session
 	refs     map[string]string
 	logger   *logger.LogEngine
-
-	CleanUpDuration time.Duration
-	CleanUpCheck    time.Duration
 }
 
 func NewSessionPool(log *logger.LogEngine) *SessionPool {
@@ -39,24 +36,6 @@ func NewSessionPool(log *logger.LogEngine) *SessionPool {
 	sp.logger = log
 	sp.sessions = map[string]*Session{}
 	sp.refs = map[string]string{}
-
-	if int(sp.CleanUpDuration) == 0 {
-		sp.CleanUpDuration = 30 * time.Minute
-	}
-
-	if int(sp.CleanUpCheck) == 0 {
-		sp.CleanUpCheck = 100 * time.Millisecond
-	}
-
-	go func() {
-		for {
-			<-time.After(sp.CleanUpCheck)
-			cleaned := sp.RemoveSessionByDuration(sp.CleanUpDuration)
-			if cleaned > 0 {
-				sp.logger.Infof("cleaning up %d sessions(s)", cleaned)
-			}
-		}
-	}()
 
 	return sp
 }
@@ -97,10 +76,6 @@ func (sp *SessionPool) Create(referenceID string, data codekit.M, second int) (*
 	_, ok := sp.GetByReferenceID(referenceID)
 	if ok {
 		return nil, errors.New("Session already exist")
-	}
-
-	if second == 0 {
-		second = int(sp.CleanUpDuration) / int(time.Second)
 	}
 
 	se := new(Session)
