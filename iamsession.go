@@ -111,11 +111,6 @@ func (sp *SessionPool) Update(sessionID string, second int) error {
 		return errors.New("Session for this ID is not exist")
 	}
 
-	if second != 0 {
-		se.Duration = second
-	}
-	se.LastUpdate = time.Now()
-
 	sp.mtx.Lock()
 	defer sp.mtx.Unlock()
 	sp.sessions[se.SessionID] = se
